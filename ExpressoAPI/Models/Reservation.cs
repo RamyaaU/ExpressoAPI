@@ -25,7 +25,9 @@ namespace ExpressoAPI.Models
         public int TotalPeople { get; set; }
         [Required]
         public DateTime Date { get; set; }
+
         [Required]
+        [DataType(DataType.Time)]
         public string Time { get; set; }
     }
 }
