@@ -9,6 +9,11 @@ namespace ExpressoAPI.Data
 {
     public class ExpressDbContext : DbContext
     {
+        public ExpressDbContext(DbContextOptions<ExpressDbContext>options):base(options)
+        {
+
+        }
+
         public DbSet<Menu> Menus {get; set; }
 
         public DbSet<Reservation> Reservation{ get; set; }
